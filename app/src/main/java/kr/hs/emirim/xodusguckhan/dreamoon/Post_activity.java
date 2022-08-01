@@ -12,6 +12,5 @@ public class Post_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
 
-
     }
 }
