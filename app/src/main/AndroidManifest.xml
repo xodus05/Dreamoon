@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dreamoon">
         <activity
+            android:name=".Profil_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Post_activity"
+            android:exported="false" />
+        <activity
+            android:name=".Diary_activity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
