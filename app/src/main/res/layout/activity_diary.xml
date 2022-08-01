@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="25dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="#D6A1A1"
     tools:context=".Diary_activity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/textV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2022.08.01"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:textColor="#000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_red"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D6A1A1" />
+
+        <Button
+            android:id="@+id/btn_orange"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#EBAE81" />
+
+        <Button
+            android:id="@+id/btn_yellow"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#F9EA9D" />
+
+        <Button
+            android:id="@+id/btn_green"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#B2D6A1" />
+
+        <Button
+            android:id="@+id/btn_blue"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#A1B0D6" />
+
+        <Button
+            android:id="@+id/btn_purple"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#C19FD1" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edt_diary"
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:background="#ffffff"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:stretchColumns="0"
+        >
+        <TableRow>
+            <Button
+                android:id="@+id/btn_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="게시하기"/>
+
+            <Button
+                android:id="@+id/btn_diary_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="저장" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>
