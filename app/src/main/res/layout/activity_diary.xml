@@ -24,53 +24,59 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_red"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#D6A1A1" 
+            android:src="@drawable/red"/>
+
+        <ImageButton
+            android:id="@+id/btn_orange"
+            android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#D6A1A1" />
+            android:backgroundTint="#EBAE81"
+            android:src="@drawable/orange"/>
 
-        <Button
-            android:id="@+id/btn_orange"
-            android:layout_width="40dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginTop="20dp"
-            android:backgroundTint="#EBAE81" />
-
-        <Button
+        <ImageButton
             android:id="@+id/btn_yellow"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#F9EA9D" />
+            android:backgroundTint="#F9EA9D"
+            android:src="@drawable/yellow"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_green"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#B2D6A1" />
+            android:backgroundTint="#B2D6A1"
+            android:src="@drawable/green"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_blue"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#A1B0D6" />
+            android:backgroundTint="#A1B0D6"
+            android:src="@drawable/blue"/>
 
-        <Button
+        <ImageButton
             android:id="@+id/btn_purple"
-            android:layout_width="40dp"
+            android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#C19FD1" />
+            android:backgroundTint="#C19FD1"
+            android:src="@drawable/purple"/>
 
     </LinearLayout>
 
@@ -92,12 +98,16 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
                 android:text="게시하기"/>
 
             <Button
                 android:id="@+id/btn_diary_save"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="#000000"
+                android:backgroundTint="#ffffff"
                 android:text="저장" />
         </TableRow>
     </TableLayout>
