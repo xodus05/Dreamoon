@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="25dp"
-    android:gravity="center_horizontal"
+    android:paddingTop="25dp"
+    android:paddingLeft="25dp"
+    android:paddingRight="25dp"
     android:orientation="vertical"
-    android:background="#D6A1A1"
+    android:background="#F5ECDC"
     tools:context=".Diary_activity">
+
 
     <TextView
         android:id="@+id/textV"
@@ -30,7 +32,7 @@
             android:layout_height="50dp"
             android:layout_marginLeft="4dp"
             android:layout_marginTop="20dp"
-            android:backgroundTint="#D6A1A1" 
+            android:backgroundTint="#D6A1A1"
             android:src="@drawable/red"/>
 
         <ImageButton
@@ -83,7 +85,7 @@
     <EditText
         android:id="@+id/edt_diary"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="400dp"
         android:background="#ffffff"/>
 
     <TableLayout
@@ -111,5 +113,14 @@
                 android:text="저장" />
         </TableRow>
     </TableLayout>
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom|center_horizontal">
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/botton_menu"/>
+    </LinearLayout>
 </LinearLayout>
