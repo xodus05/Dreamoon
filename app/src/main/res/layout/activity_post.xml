@@ -11,15 +11,18 @@
     tools:context=".Post_activity">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="550dp"
+        android:layout_height="650dp"
+        android:padding="25dp"
         android:background="#ffffff">
 
         <RadioGroup
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:padding="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            >
 
             <RadioButton
                 android:id="@+id/open"
@@ -36,11 +39,37 @@
 
         <Spinner
             android:id="@+id/dreamcategory"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="115dp"
+            android:layout_height="28dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/dreamcategory"
+            android:layout_marginBottom="20dp"
+
             />
 
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#A0A0A0"
+            android:text="꿈 제목"
+            />
 
+        <ImageView
+            android:id="@+id/imgv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="-25dp"
+            android:src="@drawable/dream1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:text="내용"/>
     </LinearLayout>
 
 
