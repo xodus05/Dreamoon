@@ -8,10 +8,13 @@
     tools:context=".MainActivity">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_tab"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:menu="@menu/botton_menu"
         android:layout_marginTop="835dp"/>
+
+
 
 
 </LinearLayout>
