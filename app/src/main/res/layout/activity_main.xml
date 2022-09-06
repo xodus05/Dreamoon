@@ -18,6 +18,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mbtn"
+        android:background="#B49AA7FF"
+        android:text="테스트버튼"
         />
 
 
