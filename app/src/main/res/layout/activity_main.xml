@@ -14,7 +14,11 @@
         app:menu="@menu/botton_menu"
         android:layout_marginTop="835dp"/>
 
-
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mbtn"
+        />
 
 
 </LinearLayout>

@@ -13,10 +13,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button calendar = findViewById(R.id.calendar_tab);
-        calendar.setOnClickListener(CalendarTab);
+        Button m_btn = findViewById(R.id.mbtn);
+        m_btn.setOnClickListener(mbtnListener);
     }
-    View.OnClickListener CalendarTab = new View.OnClickListener() {
+    View.OnClickListener mbtnListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
             Intent intent = new Intent(getApplicationContext(), Diary_activity.class);
