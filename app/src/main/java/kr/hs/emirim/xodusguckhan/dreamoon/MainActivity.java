@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         Button Mbtn = findViewById(R.id.mbtn);
         Mbtn.setOnClickListener(mbtnListener);
         Button calendar_tab = findViewById(R.id.calendar_tab);
-        calendar_tab.setOnClickListener(calendarListener);
+
     }
     View.OnClickListener mbtnListener = new View.OnClickListener() {
         @Override
@@ -25,12 +25,6 @@ public class MainActivity extends AppCompatActivity {
             startActivityForResult(intent, 0);
         }
     };
-    View.OnClickListener calendarListener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), Diary_activity.class);
-            startActivityForResult(intent, 0);
-        }
-    };
+
 
 }
