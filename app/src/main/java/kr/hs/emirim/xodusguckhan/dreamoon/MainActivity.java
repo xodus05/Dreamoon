@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button Mbtn = findViewById(R.id.mbtn);
+        Button Mbtn = findViewById(R.id.main_tab);
         Mbtn.setOnClickListener(mbtnListener);
         Button calendar_tab = findViewById(R.id.calendar_tab);
 
