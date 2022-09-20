@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/KWONh/AndroidProjects/Dreamoon/app/src/main/res/layout/activity_hmong.xml" value="0.245018115942029" />
+        <entry key="..\:/KWONh/AndroidProjects/Dreamoon/app/src/main/res/layout/activity_profil.xml" value="0.23703703703703705" />
         <entry key="..\:/Major/android/Dreamoon2/app/src/main/res/layout/activity_diary.xml" value="0.25" />
         <entry key="..\:/Major/android/Dreamoon2/app/src/main/res/layout/activity_post.xml" value="0.16458333333333333" />
         <entry key="..\:/Major/android/Dreamoon2/app/src/main/res/layout/activity_profil.xml" value="0.17916666666666667" />
@@ -24,7 +26,7 @@
   <component name="VisualizationToolProject">
     <option name="state">
       <ProjectState>
-        <option name="scale" value="0.175" />
+        <option name="scale" value="0.23703703703703705" />
       </ProjectState>
     </option>
   </component>
