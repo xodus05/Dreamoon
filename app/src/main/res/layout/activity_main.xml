@@ -7,13 +7,52 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <CalendarView
+        android:id="@+id/calendar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:focusedMonthDateColor="#000000"
+        android:selectedWeekBackgroundColor="#ffffff"
+        android:unfocusedMonthDateColor="#F6ACAC"
+        android:layout_weight="5">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/main_tab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/botton_menu"
+            android:layout_marginTop="677dp"/>
+    </CalendarView>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+
+    <FrameLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/bottomNavigationView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+    </FrameLayout>
+
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/main_tab"
+        android:id="@+id/bottomNavi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:menu="@menu/botton_menu"
-        android:layout_marginTop="835dp"/>
-
-
+        app:itemBackground="@android:color/white"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/botton_menu"/>
 
 </LinearLayout>
+
+
