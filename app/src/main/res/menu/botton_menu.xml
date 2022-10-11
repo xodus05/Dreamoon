@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/calendar_tab"
+        android:id="@+id/i1"
         android:enabled="true"
         android:icon="@drawable/calendar"
         android:title="달력"/>
 
     <item
-        android:id="@+id/community_tab"
+        android:id="@+id/i2"
         android:enabled="true"
         android:icon="@drawable/pngegg"
         android:title="커뮤니티"/>
 
     <item
-        android:id="@+id/plus_tab"
+        android:id="@+id/i3"
         android:enabled="true"
         android:icon="@drawable/plus_icon"
         android:title="추가"/>
 
     <item
-        android:id="@+id/dream_tab"
+        android:id="@+id/i4"
         android:enabled="true"
         android:icon="@drawable/dream_icon"
         android:title="해몽"/>
 
     <item
-        android:id="@+id/profile_tab"
+        android:id="@+id/i5"
         android:enabled="true"
         android:icon="@drawable/profile_icon"
         android:title="프로필"/>
