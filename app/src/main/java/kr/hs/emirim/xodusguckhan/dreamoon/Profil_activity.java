@@ -20,13 +20,6 @@ public class Profil_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profil);
 
-        btnUpd.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                textName.setText(strTextName);
-                textIntro.setText(strTextIntro);
-            }
-        });
     }
 
 }
