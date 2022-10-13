@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         calendarView.setOnDateChangeListener(new CalendarView.OnDateChangeListener() {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
-                Log.i("디버깅", "선택한 날짜는" + i + "년" + (i1 + 1) + "월" + i2 + "일");
+                Log.i("디버깅", "현재 선택한 날짜는" + i + "년" + (i1 + 1) + "월" + i2 + "일");
             }
         });
     }
