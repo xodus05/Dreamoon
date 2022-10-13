@@ -118,6 +118,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:gravity="bottom|center_horizontal">
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/diary_tab"
             android:layout_width="match_parent"
