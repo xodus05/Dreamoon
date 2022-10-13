@@ -1,7 +1,5 @@
 package kr.hs.emirim.xodusguckhan.dreamoon;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -9,9 +7,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class Diary_activity extends AppCompatActivity {
+
     ImageButton btnred, btnorange, btnyellow, btngreen, btnblue, btnpurple;
     Button btnpost, btnDiarySave;
     BottomNavigationView diarytab;
