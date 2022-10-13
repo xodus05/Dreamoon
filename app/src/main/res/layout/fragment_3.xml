@@ -23,7 +23,9 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        >
 
         <ImageButton
             android:id="@+id/btn_red"
@@ -84,7 +86,8 @@
     <EditText
         android:id="@+id/edt_diary"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="500dp"
+        android:layout_marginTop="100dp"
         android:background="#ffffff"/>
 
     <TableLayout
@@ -93,7 +96,11 @@
         android:layout_marginTop="20dp"
         android:stretchColumns="0"
         >
-        <TableRow>
+
+        <TableRow
+            android:layout_marginTop="650dp"
+            >
+
             <Button
                 android:id="@+id/btn_post"
                 android:layout_width="wrap_content"
@@ -101,6 +108,7 @@
                 android:layout_gravity="left"
                 android:textColor="#000000"
                 android:backgroundTint="#ffffff"
+
                 android:text="게시하기"/>
 
             <Button
@@ -112,16 +120,5 @@
                 android:text="저장" />
         </TableRow>
     </TableLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:gravity="bottom|center_horizontal">
 
-        <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/diary_tab"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:menu="@menu/botton_menu"/>
-    </LinearLayout>
 </FrameLayout>
