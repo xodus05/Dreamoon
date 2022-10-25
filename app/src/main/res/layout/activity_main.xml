@@ -8,21 +8,27 @@
     tools:context=".MainActivity">
 
 
-
     <CalendarView
         android:id="@+id/calendar"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="578dp"
+        android:layout_weight="5"
         android:focusedMonthDateColor="#000000"
         android:selectedWeekBackgroundColor="#ffffff"
-        android:unfocusedMonthDateColor="#CFCACA"
-        android:layout_weight="5">
+        android:unfocusedMonthDateColor="#CFCACA">
 
         <FrameLayout
             android:id="@+id/main_frame"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="match_parent" >
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="안녕하세요"/>
+
+        </FrameLayout>
     </CalendarView>
 
 
