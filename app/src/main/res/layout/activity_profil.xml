@@ -64,11 +64,11 @@
         android:textColor="#000000"
         android:textSize="20sp" />
 
-    <View
+    <!--<View
         android:layout_width="match_parent"
         android:layout_height="2dp"
         android:layout_marginTop="225dp"
-        android:background="#000000" />
+        android:background="#000000" />-->
 
 
 </LinearLayout>
