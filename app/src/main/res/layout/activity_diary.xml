@@ -22,7 +22,7 @@
         android:layout_marginTop="20dp"
         android:textColor="#000000"/>
 
-    <LinearLayout
+<!--    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -80,7 +80,7 @@
             android:backgroundTint="#C19FD1"
             android:src="@drawable/purple"/>
 
-    </LinearLayout>
+    </LinearLayout>-->
 
     <EditText
         android:id="@+id/edt_diary"
