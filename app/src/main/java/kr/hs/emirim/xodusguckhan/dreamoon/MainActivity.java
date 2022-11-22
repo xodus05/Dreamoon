@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
+
     BottomNavigationView bottomNavigationView;
     private CalendarView calendarView;
     @Override
@@ -56,5 +57,6 @@ public class MainActivity extends AppCompatActivity {
                 Log.i("디버깅", "현재 선택한 날짜는" + year + "년" + (month + 1) + "월" + date + "일");
             }
         });
+
     }
 }
