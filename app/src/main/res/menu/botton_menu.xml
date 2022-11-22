@@ -6,11 +6,7 @@
         android:icon="@drawable/calendar"
         android:title="달력"/>
 
-    <item
-        android:id="@+id/i2"
-        android:enabled="true"
-        android:icon="@drawable/pngegg"
-        android:title="커뮤니티"/>
+
 
     <item
         android:id="@+id/i3"
