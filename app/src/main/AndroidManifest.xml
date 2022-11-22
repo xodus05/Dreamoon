@@ -14,9 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Dreamoon">
         <activity
-            android:name=".hmong"
-            android:exported="false" />
-        <activity
             android:name=".Profil_activity"
             android:exported="false" />
         <activity
