@@ -8,11 +8,11 @@
     android:background="#F5ECDC"
     android:padding="25dp"
     android:gravity="center_horizontal"
-    tools:context=".Post_activity">
+    tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="해몽" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="리스트 뷰.. 만들거에요.."/>
 
 </LinearLayout>

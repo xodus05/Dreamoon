@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,6 +16,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
+import java.util.Calendar;
+
 public class Diary_activity extends AppCompatActivity {
     myDBHelper myDBHelper;
     SQLiteDatabase sqlDB;
@@ -22,6 +25,7 @@ public class Diary_activity extends AppCompatActivity {
     Button btnpost, btnDiarySave;
     BottomNavigationView diarytab;
     EditText edtDiary;
+    String fileName;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,17 +46,26 @@ public class Diary_activity extends AppCompatActivity {
         diarytab = findViewById(R.id.diary_tab);
         diarytab.setOnClickListener(diarytabListener);
 
+        Calendar cal = Calendar.getInstance();
+        int cYear = cal.get(Calendar.YEAR);
+        int cMonth = cal.get(Calendar.MONTH);
+        int cDay = cal.get(Calendar.DAY_OF_MONTH);
+
         myDBHelper = new myDBHelper(this);
+
+        fileName = Integer.toString(cYear)+"_"+Integer.toString(cMonth+1)+"_"+Integer.toString(cDay);
         btnDiarySave.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 sqlDB = myDBHelper.getWritableDatabase();
-                sqlDB.execSQL("INSERT INTO groupTBL VALUES('"+ edtDiary.getText().toString() + ");");
+                sqlDB.execSQL("INSERT INTO myDiary VALUES('"+ edtDiary.getText().toString() + ");");
+                Toast.makeText(getApplicationContext(), "저장되었습니다.", Toast.LENGTH_LONG).show();
+                Log.d("저장되었습니다.","완료");
                 sqlDB.close();
-                Toast.makeText(getApplicationContext(), "저장되었습니다.", 0).show();
             }
         });
     }
+
     View.OnClickListener diarytabListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
@@ -63,21 +76,20 @@ public class Diary_activity extends AppCompatActivity {
 
     public class myDBHelper extends SQLiteOpenHelper {
         public myDBHelper(Context context){
-            super(context, "groupDB", null, 1);
+            super(context, "myDiaryDB", null, 1);
         }
 
         @Override
         public void onCreate(SQLiteDatabase db) {
-            db.execSQL("CREATE TABLE groupTBL ( gName CHAR(20) PRIMARY KEY, gNumber INTEGER);");
+            db.execSQL("CREATE TABLE myDiary ( gName CHAR(500));");
         }
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion){
-            db.execSQL("DROP TABLE IF EXISTS groupTBL");
+            db.execSQL("DROP TABLE IF EXISTS myDiary");
             onCreate(db);
         }
+
     }
-
-
 
 }

@@ -1,13 +1,9 @@
 package kr.hs.emirim.xodusguckhan.dreamoon;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.os.Bundle;
-import android.view.View;
-import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
 import android.widget.ImageView;
-import android.widget.Spinner;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class Post_activity extends AppCompatActivity {
     int[] poster = {R.drawable.dream1, R.drawable.dream2, R.drawable.dream3, R.drawable.dream4, R.drawable.dream5, R.drawable.dream6, R.drawable.dream7, R.drawable.dream8, R.drawable.dream9};
@@ -18,7 +14,7 @@ public class Post_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_post);
-        imgv = findViewById(R.id.imgv);
+       /* imgv = findViewById(R.id.imgv);
         Spinner spinner = findViewById(R.id.dreamcategory);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, items);
         spinner.setAdapter(adapter);
@@ -32,6 +28,6 @@ public class Post_activity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> adapterView) {
 
             }
-        });
+        });*/
     }
 }

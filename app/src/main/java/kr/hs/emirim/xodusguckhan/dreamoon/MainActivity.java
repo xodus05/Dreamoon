@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         calendarView = (CalendarView) findViewById(R.id.calendar);
 
         //처음화면
-        getSupportFragmentManager().beginTransaction().add(R.id.main_frame, new Fragment1()).commit(); //FrameLayout에 fragment.xml 띄우기
+        //getSupportFragmentManager().beginTransaction().add(R.id.main_frame, new Fragment1()).commit(); //FrameLayout에 fragment.xml 띄우기
 
         //바텀 네비게이션뷰 안의 아이템 설정
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -33,8 +33,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.i1:
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, new Fragment1()).commit();
                         break;
-
-                    case R.id.i3://
+                    case R.id.i3:
                         getSupportFragmentManager().beginTransaction().replace(R.id.main_frame, new Fragment3()).commit();
                         break;
                     case R.id.i4:
@@ -53,6 +52,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int date) {
                 Log.i("디버깅", "현재 선택한 날짜는" + year + "년" + (month + 1) + "월" + date + "일");
+
             }
         });
 

@@ -15,7 +15,7 @@
         android:id="@+id/textV"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="2022.08.01"
+        android:text="2022.11.22"
         android:textSize="20sp"
         android:gravity="center"
         android:layout_marginTop="20dp"
@@ -128,7 +128,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="left"
                 android:backgroundTint="#ffffff"
-                android:text="게시하기"
+                android:text="수정"
                 android:textColor="#000000" />
 
             <Button
